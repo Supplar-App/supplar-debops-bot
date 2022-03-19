@@ -14,3 +14,4 @@ python src/bot.py
 ## Usage
 
 ## Docs
+ - [technical requirements](https://github.com/Supplar-App/supplar-devops-bot/blob/master/docs/technical-requirements.txt)
