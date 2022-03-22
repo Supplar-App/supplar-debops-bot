@@ -1,0 +1,8 @@
+version: "3.9"
+
+services:
+  sup_dev_bot:
+    restart: always
+    build:
+      context: .
+    command: ["python3", "src/bot.py"]
