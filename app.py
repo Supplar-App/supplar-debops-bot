@@ -1,8 +1,8 @@
 from aiogram import executor
 
 from loader import dp
-# import middlewares, filters, handlers # Если будут middlewares, filters, то соблюдать порядок middlewares, filters, handlers
-import handlers
+import middlewares, filters, handlers # Если будут middlewares, filters, то соблюдать порядок middlewares, filters, handlers
+
 from utils.notify_admins import on_startup_notify
 from utils.set_bot_commands import set_default_commands
 
@@ -13,7 +13,7 @@ async def on_startup(dispatcher):
 
 
     # Уведомляет про запуск
-    await on_startup_notify(dispatcher)
+    # await on_startup_notify(dispatcher)
 
 
 if __name__ == '__main__':
