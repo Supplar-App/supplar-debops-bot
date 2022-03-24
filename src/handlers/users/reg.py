@@ -13,11 +13,6 @@ async def bot_register_user(message: types.Message):
     await message.answer(f"Хотите использовать имя - `{message.from_user.full_name}` ?", parse_mode="Markdown")
 
 
-@dp.message_handler(text="SIGN IN")
-async def sign_in(message: types.Message):
-    await message.answer(f"Введите имя пользователя, чтобы войти")
-
-
 @dp.message_handler(text="SIGN UP")
 async def sign_in(message: types.Message):
     await message.answer(f"Введите имя пользователя, чтобы зарегистрироваться")
@@ -27,5 +22,3 @@ async def sign_in(message: types.Message):
 async def sign_in(message: types.Message):
     await message.answer(f"Существующий пользователь нажмите 'SIGN IN'\n"
                          f"Создать нового пользователя нажмите 'SIGN UP'")
-
-
