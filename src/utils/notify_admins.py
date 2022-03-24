@@ -2,7 +2,7 @@ import logging
 
 from aiogram import Dispatcher, types
 
-from data.config import ADMINS
+from src.data.config import ADMINS
 
 
 async def on_startup_notify(dp: Dispatcher):
@@ -15,3 +15,4 @@ async def on_startup_notify(dp: Dispatcher):
 
         except Exception as err:
             logging.exception(err)
+
